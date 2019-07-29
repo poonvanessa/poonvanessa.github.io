@@ -19,34 +19,32 @@
    <meta name="description" content="">
 
    <!-- Site title
-   ================================================== -->
-   <title>What's next?</title>
+            ================================================== -->
+   <title id='title'>{{ title }}</title>
 
    <!-- Bootstrap CSS
-   ================================================== -->
+            ================================================== -->
    <link rel="stylesheet" href="css/bootstrap.min.css">
 
    <!-- Animate CSS
-   ================================================== -->
+            ================================================== -->
    <link rel="stylesheet" href="css/animate.min.css">
 
    <!-- Font Icons CSS
-   ================================================== -->
+            ================================================== -->
    <link rel="stylesheet" href="css/font-awesome.min.css">
    <link rel="stylesheet" href="css/ionicons.min.css">
 
    <!-- Main CSS
-   ================================================== -->
+            ================================================== -->
    <link rel="stylesheet" href="css/style.css">
 
    <!-- Google web font 
-   ================================================== -->
+            ================================================== -->
    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,300' rel='stylesheet' type='text/css'>
-
 </head>
 
 <body>
-
 
    <!-- Preloader section
 ================================================== -->
@@ -56,50 +54,7 @@
 
    </div>
 
-
-   <!-- Navigation section
-================================================== -->
-   <div class="nav-container">
-      <nav class="nav-inner transparent">
-
-         <div class="navbar">
-            <div class="container">
-               <div class="row">
-
-                  <div class="brand">
-                     <a href="index.html">What's next?</a>
-                  </div>
-
-                  <div class="navicon">
-                     <div class="menu-container">
-
-                        <div class="circle dark inline">
-                           <i class="icon ion-navicon"></i>
-                        </div>
-
-                        <div class="list-menu">
-                           <i class="icon ion-close-round close-iframe"></i>
-                           <div class="intro-inner">
-                              <ul id="nav-menu">
-                                 <li><a href="index.html">Home</a></li>
-                                 <li><a href="about.html">About</a></li>
-                                 <li><a href="blog.html">Blog</a></li>
-                                 <li><a href="contact.html">Contact</a></li>
-                              </ul>
-                           </div>
-                        </div>
-
-                     </div>
-                  </div>
-
-               </div>
-            </div>
-         </div>
-
-      </nav>
-   </div>
-
-
+   <navigation></navigation>
    <!-- Header section
 ================================================== -->
    <section id="header" class="header-one">
@@ -255,6 +210,17 @@
    <script src="js/imagesloaded.min.js"></script>
    <script src="js/wow.min.js"></script>
    <script src="js/custom.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+   <script src="js/main.js"></script>
+   <script>
+      
+      var app = new Vue({
+         el: '#title',
+         data: {
+            title: "What's next?"
+         }
+      })
+   </script>
 
 </body>
 
