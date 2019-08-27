@@ -457,8 +457,8 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
     font-weight: 300;
     color: #636a82;
     margin-top: 14px;
-    text-transform: uppercase;
 }
+
 /*experience-time*/
 
 /*main-timeline*/
@@ -485,6 +485,9 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
     font-size: 10px;
     left: -14.5%;
     z-index: 1;
+}
+.experience-time, .other-experience span>i{
+    color: #8080ff;
 }
 .timeline-content h4.title {
     font-size: 16px;
